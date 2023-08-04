@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Haber Görseli -->
+        <ImageView
+            android:id="@+id/imageViewNewsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tokaurun"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"/>
+
+        <!-- Haber Başlığı -->
+        <TextView
+            android:id="@+id/textViewNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewNewsImage"
+            android:layout_marginTop="16dp"
+            android:text="Haber Başlığı"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <!-- Haber Tarihi -->
+        <TextView
+            android:id="@+id/textViewNewsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewNewsTitle"
+            android:layout_marginTop="8dp"
+            android:text="Haber Tarihi: 01 Ağustos 2023"
+            android:textSize="14sp"/>
+
+        <!-- Haber İçeriği -->
+        <TextView
+            android:id="@+id/textViewNewsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewNewsDate"
+            android:layout_marginTop="16dp"
+            android:text="Haber İçeriği burada yer alacaktır. Haber makalesinin detayları bu alanda olacak."
+            android:textSize="16sp"/>
+        <!-- "Devamını Oku" Butonu -->
+        <Button
+            android:id="@+id/buttonReadMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:text="Devamını Oku"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
